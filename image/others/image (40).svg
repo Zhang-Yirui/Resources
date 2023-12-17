@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" color-interpolation-filters="sRGB" style="margin:auto" version="1.0" viewBox="0 0 340 250">
+  <g fill="#343c3e" class="icon-text-wrapper icon-svg-group iconsvg">
+    <g class="iconsvg-imagesvg" transform="translate(140 94.99909973)">
+      <path fill="none" d="M0 0h60v60.00180005H0z" class="image-rect"/>
+      <svg width="60" height="60.00180005" class="image-svg-svg primary" filter="url(#a)" style="overflow:visible">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" enable-background="new 0 0 100 100" viewBox="19.15399933 19.15299988 61.69200134 61.69400024">
+          <path d="M50 19.153c-17.008 0-30.846 13.838-30.846 30.847 0 10.233 7.749 18.681 17.684 19.809C37.961 76.072 43.42 80.847 50 80.847c6.581 0 12.04-4.776 13.163-11.038C73.098 68.681 80.846 60.233 80.846 50c0-17.009-13.838-30.847-30.846-30.847zM24.154 50c0-13.161 9.893-24.033 22.629-25.625l-9.624 40.43C29.833 63.849 24.154 57.583 24.154 50zM41.62 67.651l5.88-24.702v32.476c-3.343-1.052-5.79-4.11-5.88-7.774zm10.88 7.773V42.946l5.881 24.704c-.09 3.665-2.537 6.723-5.881 7.774zm10.343-10.619-9.625-40.43C65.953 25.967 75.846 36.839 75.846 50c0 7.583-5.679 13.849-13.003 14.805z"/>
+        </svg>
+      </svg>
+      <defs>
+        <filter id="a">
+          <feColorMatrix class="icon-fecolormatrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+        </filter>
+      </defs>
+    </g>
+  </g>
+</svg>

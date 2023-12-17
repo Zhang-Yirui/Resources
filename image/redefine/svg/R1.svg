@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" color-interpolation-filters="sRGB" style="margin:auto" version="1.0" viewBox="0 0 340 250">
+  <g fill="#333" class="icon-text-wrapper icon-svg-group iconsvg">
+    <g class="iconsvg-imagesvg" transform="translate(140 97.57167816)">
+      <path fill="none" d="M0 0h60v54.85664131H0z" class="image-rect"/>
+      <svg width="60" height="54.85664131" class="image-svg-svg primary" style="overflow:visible">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.26000214 54.18000031">
+          <path d="M38.56 12a3 3 0 0 1 0 6H0V0h39.13a15 15 0 1 1 0 30.09H6v18.09h6v-12h14.77l11.23 12h7.44l-11.26-12h8.22l16.86 18H35.42l-11.25-12H18v12H0V24.09h39.13a9 9 0 1 0 0-18.09H6v6z"/>
+        </svg>
+      </svg>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" color-interpolation-filters="sRGB" style="margin:auto" version="1.0" viewBox="0 0 340 250">
+  <g fill="#4481eb" class="iconmbgsvg">
+    <g mask="url(#a)" opacity=".55" transform="translate(113.75 76.291111)">
+      <path fill="none" d="M0 0h112.5v97.41777939H0z" class="image-rect"/>
+      <svg width="112.5" height="97.41777939" class="image-svg-svg primary" style="overflow:visible">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.09000015 52.90000153">
+          <g data-name="图层 2">
+            <g data-name="Vrstva 1">
+              <path fill="#159f87" d="M45.81 0H15.27l15.27 26.45L45.81 0z"/>
+              <path fill="#6db78c" d="M45.81 0 30.54 26.45 45.81 52.9l15.28-26.45L45.81 0z"/>
+              <path fill="#037b68" d="M15.27 0 0 26.45 15.27 52.9l15.27-26.45L15.27 0z"/>
+              <path fill="#159f87" d="M30.54 26.45 15.27 52.9h30.54L30.54 26.45z"/>
+            </g>
+          </g>
+        </svg>
+      </svg>
+      <path fill="url(#b)" d="M0 0h124.5v109.41777802H0z" style="pointer-events:none" transform="translate(-6 -6)"/>
+    </g>
+    <g>
+      <path fill="url(#c)" d="M15.42.83Q6.54.76 2.29-6.67l4.25-3.11q3.11 5.27 8.25 5.34 5.97 0 7.24-5.72.44-1.9.44-4.38v-33.13h6.03v33.71q0 9.45-6.03 13.07Q19.55.83 15.42.83Zm39.11 0q-9.97-.07-16.7-7.05l3.56-4.13q5.07 5.27 11.87 5.84.7.07 1.33.07 6.73 0 9.08-4.13.95-1.71.95-3.68 0-1.78-.57-3.08t-1.72-2.22q-1.14-.92-2.44-1.62-1.3-.7-3.21-1.52l-6.85-2.99q-9.4-4.57-9.71-12.18 0-6.16 5.27-9.84 4.12-2.86 9.77-2.86 7.75 0 13.39 5.27.32.32.64.63l-3.17 3.88q-4.89-4.51-10.86-4.51t-8.12 3.81q-.83 1.46-.83 3.23 0 4 4.76 6.54 1.02.51 3.11 1.4l6.86 2.92q6.66 2.92 8.63 7.11 1.14 2.47 1.14 5.58 0 6.54-5.33 10.41Q60.94.83 54.53.83Z" class="tp-name" data-gra="path-name" transform="translate(133.50000095 141.38874817)"/>
+      <path fill="url(#d)" d="M.19-1.92v-.85h1.08v.61q0 1.41 1.31 1.41 1.36 0 1.36-1.5v-6.33h1.17v6.28Q5.06.09 2.63.14.33.09.19-1.92Zm6.89-6.66h1.17V0H7.08v-8.58Zm4.55 0 4.31 6.94v-6.94h1.12V0h-1.31l-4.36-6.94h-.05V0h-1.12v-8.58h1.41Zm13.64 4.97h-2.63v-.98h3.75V0h-.75l-.28-1.08Q24.38.09 22.55.14q-1.74 0-2.67-.89-1.41-1.31-1.36-3.61.32-4.27 4.07-4.45 3.19.18 3.66 2.81h-1.12q-.47-1.78-2.58-1.83-2.67.19-2.82 3.52 0 3.56 2.86 3.56 1.04 0 1.79-.56.93-.75.89-2.3Zm9.18-2.48h-1.07q-.1-1.64-2.16-1.74-1.92.05-1.92 1.5 0 .94 1.03 1.08l2.44.56q1.92.47 1.92 2.35Q34.64.05 31.31.14q-1.83 0-2.58-.75-.93-.7-.89-2.16h1.13q.05 1.97 2.34 2.02 2.25-.05 2.3-1.45.19-1.18-1.88-1.55l-1.78-.38q-1.82-.51-1.82-2.06.14-2.53 3-2.62 3.23 0 3.32 2.72Zm8.49 1.82q-.19-3.37-3-3.56-2.86.14-3 3.56.14 3.33 3 3.47 2.81-.18 3-3.47Zm1.17 0Q43.83 0 39.94.14 36 0 35.72-4.27q.23-4.45 4.22-4.54 3.89.14 4.17 4.54Zm2.77-4.31 4.31 6.94v-6.94h1.12V0H51l-4.36-6.94h-.05V0h-1.12v-8.58h1.41Zm13.64 4.97h-2.63v-.98h3.75V0h-.75l-.28-1.08Q59.63.09 57.8.14q-1.74 0-2.67-.89-1.41-1.31-1.36-3.61.32-4.27 4.07-4.45 3.19.18 3.66 2.81h-1.12q-.47-1.78-2.58-1.83-2.67.19-2.82 3.52 0 3.56 2.86 3.56 1.04 0 1.79-.56.93-.75.89-2.3Z" class="tp-slogan" data-gra="path-slogan" transform="translate(139.08749962 157.03125)"/>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="d" x1="0" x2="0" y1="1" y2="0">
+      <stop offset="0%" stop-color="#4481eb"/>
+      <stop offset="100%" stop-color="#05befe"/>
+    </linearGradient>
+    <linearGradient id="c" x1="0" x2="0" y1="1" y2="0">
+      <stop offset="0%" stop-color="#4481eb"/>
+      <stop offset="100%" stop-color="#05befe"/>
+    </linearGradient>
+  </defs>
+  <defs>
+    <linearGradient id="b" x1="0" x2="0" y1="1" y2="0">
+      <stop offset="0%" stop-color="#4481eb"/>
+      <stop offset="100%" stop-color="#05befe"/>
+    </linearGradient>
+    <filter id="e" filterUnits="userSpaceOnUse">
+      <feColorMatrix values="0 0 0 0 0.99609375 0 0 0 0 0.99609375 0 0 0 0 0.99609375 0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <mask id="a">
+    <g filter="url(#e)" opacity=".55">
+      <path fill="#4481eb" fill-opacity="0" stroke-width="2" d="M0 0h112.5v97.41777939H0z" class="image-rect"/>
+      <svg width="112.5" height="97.41777939" class="image-svg-svg primary" style="overflow:visible">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.09000015 52.90000153">
+          <g data-name="图层 2">
+            <g data-name="Vrstva 1">
+              <path fill="#159f87" d="M45.81 0H15.27l15.27 26.45L45.81 0z"/>
+              <path fill="#6db78c" d="M45.81 0 30.54 26.45 45.81 52.9l15.28-26.45L45.81 0z"/>
+              <path fill="#037b68" d="M15.27 0 0 26.45 15.27 52.9l15.27-26.45L15.27 0z"/>
+              <path fill="#159f87" d="M30.54 26.45 15.27 52.9h30.54L30.54 26.45z"/>
+            </g>
+          </g>
+        </svg>
+      </svg>
+    </g>
+  </mask>
+</svg>
