@@ -1,0 +1,1392 @@
+port: 13596
+socks-port: 19229
+mixed-port: 32257
+allow-lan: true
+bind-address: '*'
+lan-allowed-ips:
+  - 0.0.0.0/0
+  - '::/0'
+lan-disallowed-ips: []
+mode: rule
+log-level: info
+ipv6: true
+keep-alive-interval: 15
+keep-alive-idle: 15
+disable-keep-alive: false
+find-process-mode: strict
+external-controller: 127.0.0.1:62269
+external-controller-cors:
+  allow-origins:
+    - '*'
+  allow-private-network: true
+secret: Mihomo.127.Party.0.External.0.Controller.1.Secret
+external-ui: D:\Apps\ScientificInternetTools\mihomo\work\panel
+profile:
+  store-selected: true
+  store-fake-ip: true
+unified-delay: true
+tcp-concurrent: true
+routing-mark: 5683
+global-client-fingerprint: chrome
+geodata-mode: true
+geodata-loader: standard
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: >-
+    https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: >-
+    https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: >-
+    https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+global-ua: clash.meta
+etag-support: true
+tun:
+  enable: true
+  device: Mihomo
+  stack: mixed
+  auto-route: true
+  auto-redirect: false
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+  route-exclude-address: []
+  mtu: 1500
+dns:
+  enable: true
+  listen: ':53'
+  ipv6: true
+  use-hosts: false
+  use-system-hosts: false
+  cache-algorithm: arc
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - +.lan
+    - +.local
+    - stun.*.*.*
+    - stun.*.*
+    - '*.ntp.org.cn'
+    - '*.openwrt.pool.ntp.org'
+    - '*.time.edu.cn'
+    - time.*.com
+    - time.*.*.com
+    - time*.*.com
+    - time*.*.*.com
+    - ntp.*.com
+    - ntp.*.*.com
+    - ntp*.*.com
+    - ntp*.*.*.com
+    - time.*.cn
+    - time.*.*.cn
+    - time*.*.cn
+    - time*.*.*.cn
+    - ntp.*.cn
+    - ntp.*.*.cn
+    - ntp*.*.cn
+    - ntp*.*.*.cn
+    - pool.ntp.org
+    - music.163.com
+    - '*.music.163.com'
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - '*.y.qq.com'
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - '*.xiami.com'
+    - '*.music.migu.cn'
+    - music.migu.cn
+    - '*.*.*.srv.nintendo.net'
+    - '*.*.stun.playstation.net'
+    - xbox.*.*.microsoft.com
+    - '*.ipv6.microsoft.com'
+    - '*.*.xboxlive.com'
+    - speedtest.cros.wr.pvp.net
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - localhost.work.weixin.qq.com
+    - +.market.xiaomi.com
+    - +.zhangyirui.cn
+    - +.bd3qif.com
+    - +.jingsong5683.top
+  fake-ip-filter-mode: blacklist
+  default-nameserver:
+    - 223.5.5.5
+    - 1.1.1.1
+    - 8.8.8.8
+  proxy-server-nameserver: &ref_1
+    - https://cloudflare-dns.com/dns-query#h3=true
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query#h3=true
+    - https://dns.google/dns-query
+    - https://dns.adguard.com/dns-query#h3=true
+    - https://dns.adguard.com/dns-query
+    - https://1.1.1.1/dns-query#h3=true
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+    - https://8.8.8.8/dns-query#h3=true
+    - 1.1.1.1
+    - 8.8.8.8
+    - 2606:4700:4700::1111
+    - 2001:4860:4860::8888
+  direct-nameserver: &ref_0
+    - https://dns.alidns.com/dns-query#h3=true
+    - https://dns.alidns.com/dns-query
+    - https://user_id.alidns.com/dns-query#h3=true
+    - https://user_id.alidns.com/dns-query
+    - https://sm2.doh.pub/dns-query#h3=true
+    - https://sm2.doh.pub/dns-query
+    - https://223.5.5.5/dns-query#h3=true
+    - https://223.5.5.5/dns-query
+    - 223.5.5.5
+    - 1.12.12.12
+    - 2400:3200::1
+    - '2402:4e00::'
+  direct-nameserver-follow-policy: false
+  nameserver:
+    - https://dns.alidns.com/dns-query#h3=true
+    - https://dns.alidns.com/dns-query
+    - https://user_id.alidns.com/dns-query#h3=true
+    - https://user_id.alidns.com/dns-query
+    - https://sm2.doh.pub/dns-query#h3=true
+    - https://sm2.doh.pub/dns-query
+    - https://223.5.5.5/dns-query#h3=true
+    - https://223.5.5.5/dns-query
+    - 223.5.5.5
+    - 1.12.12.12
+    - 2400:3200::1
+    - '2402:4e00::'
+    - https://cloudflare-dns.com/dns-query#h3=true
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query#h3=true
+    - https://dns.google/dns-query
+    - https://dns.adguard.com/dns-query#h3=true
+    - https://dns.adguard.com/dns-query
+    - https://1.1.1.1/dns-query#h3=true
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+    - https://8.8.8.8/dns-query#h3=true
+    - 1.1.1.1
+    - 8.8.8.8
+    - 2606:4700:4700::1111
+    - 2001:4860:4860::8888
+  fallback:
+    - https://cloudflare-dns.com/dns-query#h3=true
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query#h3=true
+    - https://dns.google/dns-query
+    - https://dns.adguard.com/dns-query#h3=true
+    - https://dns.adguard.com/dns-query
+    - https://1.1.1.1/dns-query#h3=true
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+    - https://8.8.8.8/dns-query#h3=true
+    - 1.1.1.1
+    - 8.8.8.8
+    - 2606:4700:4700::1111
+    - 2001:4860:4860::8888
+    - https://dns.alidns.com/dns-query#h3=true
+    - https://dns.alidns.com/dns-query
+    - https://user_id.alidns.com/dns-query#h3=true
+    - https://user_id.alidns.com/dns-query
+    - https://sm2.doh.pub/dns-query#h3=true
+    - https://sm2.doh.pub/dns-query
+    - https://223.5.5.5/dns-query#h3=true
+    - https://223.5.5.5/dns-query
+    - 223.5.5.5
+    - 1.12.12.12
+    - 2400:3200::1
+    - '2402:4e00::'
+  nameserver-policy:
+    geosite:private,cn,netease,jd,bilibili,baidu,tencent,iqiyi,geolocation-cn: *ref_0
+    geosite:github,google,youtube,telegram,steam,netflix,gfw,geolocation-!cn: *ref_1
+    geosite:category-ads,category-ads-all: rcode://success
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 172.16.0.0/12
+      - 192.0.0.0/24
+      - 192.0.2.0/24
+      - 192.168.0.0/16
+      - 198.18.0.0/15
+      - 198.51.100.0/24
+      - 203.0.113.0/24
+      - 240.0.0.0/4
+      - '::1/128'
+      - fc00::/7
+      - fe80::/10
+    domain:
+      - +.bulianglin.com
+      - +.freedidi.com
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  force-dns-mapping: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+        - 80
+        - 443
+        - 8080-8880
+      override-destination: false
+    TLS:
+      ports:
+        - 443
+        - 8443
+  force-domain:
+    - +.v2ex.com
+  skip-domain:
+    - +.push.apple.com
+  skip-dst-address:
+    - 91.105.192.0/23
+    - 91.108.4.0/22
+    - 91.108.8.0/21
+    - 91.108.16.0/21
+    - 91.108.56.0/22
+    - 95.161.64.0/20
+    - 149.154.160.0/20
+    - 185.76.151.0/24
+    - 2001:67c:4e8::/48
+    - 2001:b28:f23c::/47
+    - 2001:b28:f23f::/48
+    - 2a0a:f280:203::/48
+proxies:
+  - name: 🇸🇬Singapore AnyTLS
+    type: anytls
+    server: ppppp.jingsong5683.top
+    port: 65443
+    password: Wo7P4iCeVfrkUN8CVE63DWQQAvqAaibv
+    client-fingerprint: chrome
+    udp: true
+    idle-session-check-interval: 30
+    idle-session-timeout: 30
+    min-idle-session: 0
+    sni: ppppp.jingsong5683.top
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - name: 剩余流量：123.65 GB
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14784
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 距离下次重置剩余：10 天
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14784
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 套餐到期：2025-07-01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14784
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇭🇰Hong Kong 01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14784
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇭🇰Hong Kong 02
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14785
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇭🇰Hong Kong 03
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24787
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇭🇰Hong Kong 04
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24788
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇭🇰Hong Kong 05
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46814
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇭🇰Hong Kong 06
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46815
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇭🇰Hong Kong IEPL 01
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26613
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇭🇰Hong Kong IEPL 02
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26614
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇹🇼Taiwan 01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14786
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇹🇼Taiwan 02
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14790
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇹🇼Taiwan 03
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24789
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇹🇼Taiwan 04
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24790
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇹🇼Taiwan 05
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46816
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇹🇼Taiwan 06
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46817
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇹🇼Taiwan IEPL 01
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26615
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇹🇼Taiwan IEPL 02
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26616
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇯🇵Japan 01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14791
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇯🇵Japan 02
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14792
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇯🇵Japan 03
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24791
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇯🇵Japan 04
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24792
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇯🇵Japan 05
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46818
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇯🇵Japan 06
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46819
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇯🇵Japan IEPL 01
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26617
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇯🇵Japan IEPL 02
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26618
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇺🇸United States 01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14787
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇺🇸United States 02
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14793
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇺🇸United States 03
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24793
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇺🇸United States 04
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24794
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇺🇸United States 05
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46820
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇺🇸United States 06
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46821
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇺🇸United States IEPL 01
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26619
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇺🇸United States IEPL 02
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26620
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇸🇬Singapore 01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14789
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇸🇬Singapore 02
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14795
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇸🇬Singapore 03
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24795
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇸🇬Singapore 04
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24796
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇸🇬Singapore 05
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46830
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇸🇬Singapore 06
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46831
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇸🇬Singapore IEPL 01
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26621
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇸🇬Singapore IEPL 02
+    type: ss
+    server: apiyhyzsj.gweuc.cn
+    port: 26622
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇰🇷Korea 01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14794
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇰🇷Korea 02
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24797
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇰🇷Korea 03
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46824
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇦🇺Australia 01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14796
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇦🇺Australia 02
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24798
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇦🇺Australia 03
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 46826
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇬🇧United Kingdom 01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 47830
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇬🇧United Kingdom 02
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 47831
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇬🇧United Kingdom 03
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 47832
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇦🇶Antarctica 01
+    type: ss
+    server: cyusd123.qeayr.cn
+    port: 14797
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇦🇶Antarctica 02
+    type: ss
+    server: qc456987.qeayr.cn
+    port: 24799
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 🇦🇶Antarctica 03
+    type: ss
+    server: s20002625.qeayr.cn
+    port: 13918
+    cipher: 2022-blake3-aes-128-gcm
+    password: MjdlZmY4YWIyZDU0OGNkNw==:YWY5MmZmNmUtMjJkNy00Mg==
+    udp: true
+  - name: 美国免费[ipv6]
+    type: vless
+    server: 2605:6400:20:337:4b2f:2186:32c7:591f
+    port: 443
+    uuid: af92ff6e-22d7-42dc-9c13-23247ff1b9d8
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    servername: us.archive.ubuntu.com
+    reality-opts:
+      public-key: IDKfxFjmVdUwLZJazMqqJZabKPGhxwNhp1sOPKvHqwo
+      short-id: 758c70f9
+    client-fingerprint: firefox
+proxy-groups:
+  - name: 节点选择
+    type: select
+    proxies:
+      - 延迟选优
+      - 流量光机场
+      - 故障转移
+      - 负载均衡
+      - 全局直连
+      - 全局拦截
+    interval: 300
+    timeout: 3000
+    url: https://www.google.com/generate_204
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: >-
+      https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg
+  - name: 延迟选优
+    type: url-test
+    proxies: &ref_2
+      - 🇸🇬Singapore AnyTLS
+      - 剩余流量：123.65 GB
+      - 距离下次重置剩余：10 天
+      - 套餐到期：2025-07-01
+      - 🇭🇰Hong Kong 01
+      - 🇭🇰Hong Kong 02
+      - 🇭🇰Hong Kong 03
+      - 🇭🇰Hong Kong 04
+      - 🇭🇰Hong Kong 05
+      - 🇭🇰Hong Kong 06
+      - 🇭🇰Hong Kong IEPL 01
+      - 🇭🇰Hong Kong IEPL 02
+      - 🇹🇼Taiwan 01
+      - 🇹🇼Taiwan 02
+      - 🇹🇼Taiwan 03
+      - 🇹🇼Taiwan 04
+      - 🇹🇼Taiwan 05
+      - 🇹🇼Taiwan 06
+      - 🇹🇼Taiwan IEPL 01
+      - 🇹🇼Taiwan IEPL 02
+      - 🇯🇵Japan 01
+      - 🇯🇵Japan 02
+      - 🇯🇵Japan 03
+      - 🇯🇵Japan 04
+      - 🇯🇵Japan 05
+      - 🇯🇵Japan 06
+      - 🇯🇵Japan IEPL 01
+      - 🇯🇵Japan IEPL 02
+      - 🇺🇸United States 01
+      - 🇺🇸United States 02
+      - 🇺🇸United States 03
+      - 🇺🇸United States 04
+      - 🇺🇸United States 05
+      - 🇺🇸United States 06
+      - 🇺🇸United States IEPL 01
+      - 🇺🇸United States IEPL 02
+      - 🇸🇬Singapore 01
+      - 🇸🇬Singapore 02
+      - 🇸🇬Singapore 03
+      - 🇸🇬Singapore 04
+      - 🇸🇬Singapore 05
+      - 🇸🇬Singapore 06
+      - 🇸🇬Singapore IEPL 01
+      - 🇸🇬Singapore IEPL 02
+      - 🇰🇷Korea 01
+      - 🇰🇷Korea 02
+      - 🇰🇷Korea 03
+      - 🇦🇺Australia 01
+      - 🇦🇺Australia 02
+      - 🇦🇺Australia 03
+      - 🇬🇧United Kingdom 01
+      - 🇬🇧United Kingdom 02
+      - 🇬🇧United Kingdom 03
+      - 🇦🇶Antarctica 01
+      - 🇦🇶Antarctica 02
+      - 🇦🇶Antarctica 03
+      - 美国免费[ipv6]
+    interval: 300
+    timeout: 3000
+    url: https://www.google.com/generate_204
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: >-
+      https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/speed.svg
+  - name: 流量光机场
+    type: select
+    proxies: *ref_2
+    interval: 300
+    timeout: 3000
+    url: https://www.google.com/generate_204
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: >-
+      https://fastly.jsdelivr.net/gh/Zhang-Yirui/Resources@main/icon/_/node-light.svg
+  - name: OpenAI
+    type: select
+    proxies:
+      - 节点选择
+      - 🇸🇬Singapore AnyTLS
+      - 剩余流量：123.65 GB
+      - 距离下次重置剩余：10 天
+      - 套餐到期：2025-07-01
+      - 🇭🇰Hong Kong 01
+      - 🇭🇰Hong Kong 02
+      - 🇭🇰Hong Kong 03
+      - 🇭🇰Hong Kong 04
+      - 🇭🇰Hong Kong 05
+      - 🇭🇰Hong Kong 06
+      - 🇭🇰Hong Kong IEPL 01
+      - 🇭🇰Hong Kong IEPL 02
+      - 🇹🇼Taiwan 01
+      - 🇹🇼Taiwan 02
+      - 🇹🇼Taiwan 03
+      - 🇹🇼Taiwan 04
+      - 🇹🇼Taiwan 05
+      - 🇹🇼Taiwan 06
+      - 🇹🇼Taiwan IEPL 01
+      - 🇹🇼Taiwan IEPL 02
+      - 🇯🇵Japan 01
+      - 🇯🇵Japan 02
+      - 🇯🇵Japan 03
+      - 🇯🇵Japan 04
+      - 🇯🇵Japan 05
+      - 🇯🇵Japan 06
+      - 🇯🇵Japan IEPL 01
+      - 🇯🇵Japan IEPL 02
+      - 🇺🇸United States 01
+      - 🇺🇸United States 02
+      - 🇺🇸United States 03
+      - 🇺🇸United States 04
+      - 🇺🇸United States 05
+      - 🇺🇸United States 06
+      - 🇺🇸United States IEPL 01
+      - 🇺🇸United States IEPL 02
+      - 🇸🇬Singapore 01
+      - 🇸🇬Singapore 02
+      - 🇸🇬Singapore 03
+      - 🇸🇬Singapore 04
+      - 🇸🇬Singapore 05
+      - 🇸🇬Singapore 06
+      - 🇸🇬Singapore IEPL 01
+      - 🇸🇬Singapore IEPL 02
+      - 🇰🇷Korea 01
+      - 🇰🇷Korea 02
+      - 🇰🇷Korea 03
+      - 🇦🇺Australia 01
+      - 🇦🇺Australia 02
+      - 🇦🇺Australia 03
+      - 🇬🇧United Kingdom 01
+      - 🇬🇧United Kingdom 02
+      - 🇬🇧United Kingdom 03
+      - 🇦🇶Antarctica 01
+      - 🇦🇶Antarctica 02
+      - 🇦🇶Antarctica 03
+      - 美国免费[ipv6]
+    interval: 300
+    timeout: 3000
+    url: https://www.google.com/generate_204
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: >-
+      https://fastly.jsdelivr.net/gh/Zhang-Yirui/Resources@main/icon/_/chatgpt.svg
+  - name: 故障转移
+    type: fallback
+    proxies: *ref_2
+    interval: 300
+    timeout: 3000
+    url: https://www.google.com/generate_204
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: >-
+      https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/ambulance.svg
+  - name: 负载均衡
+    type: load-balance
+    strategy: consistent-hashing
+    proxies: *ref_2
+    include-all: true
+    interval: 300
+    timeout: 3000
+    url: https://www.google.com/generate_204
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: >-
+      https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/merry_go.svg
+  - name: 全局直连
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+    interval: 300
+    timeout: 3000
+    url: http://connect.rom.miui.com/generate_204
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: https://fastly.jsdelivr.net/gh/Zhang-Yirui/Resources@main/icon/_/link.svg
+  - name: 全局拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+    interval: 300
+    timeout: 3000
+    url: http://connect.rom.miui.com/generate_204
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: https://fastly.jsdelivr.net/gh/Zhang-Yirui/Resources@main/icon/_/block.svg
+rule-providers:
+  direct:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: domain
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+    path: ./ruleset/loyalsoldier/direct.yaml
+  proxy:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: domain
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+    path: ./ruleset/loyalsoldier/proxy.yaml
+  reject:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: domain
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: ./ruleset/loyalsoldier/reject.yaml
+  private:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: domain
+    url: >-
+      https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+    path: ./ruleset/loyalsoldier/private.yaml
+  apple:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: domain
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+    path: ./ruleset/loyalsoldier/apple.yaml
+  icloud:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: domain
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    path: ./ruleset/loyalsoldier/icloud.yaml
+  gfw:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: domain
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+    path: ./ruleset/loyalsoldier/gfw.yaml
+  tld-not-cn:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: domain
+    url: >-
+      https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+    path: ./ruleset/loyalsoldier/tld-not-cn.yaml
+  telegramcidr:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: ipcidr
+    url: >-
+      https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    path: ./ruleset/loyalsoldier/telegramcidr.yaml
+  cncidr:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: ipcidr
+    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    path: ./ruleset/loyalsoldier/cncidr.yaml
+  lancidr:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: ipcidr
+    url: >-
+      https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+    path: ./ruleset/loyalsoldier/lancidr.yaml
+  applications:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+    path: ./ruleset/loyalsoldier/applications.yaml
+  OpenAI:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
+    path: ./ruleset/blackmatrix7/OpenAI.yaml
+  Advertising-Direct:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Direct/Direct.yaml
+    path: ./ruleset/blackmatrix7/Direct.yaml
+  Advertising:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Advertising/Advertising_Classical.yaml
+    path: ./ruleset/blackmatrix7/Advertising.yaml
+  ZhihuAds:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ZhihuAds/ZhihuAds.yaml
+    path: ./ruleset/blackmatrix7/ZhihuAds.yaml
+  AdvertisingMiTV:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AdvertisingMiTV/AdvertisingMiTV.yaml
+    path: ./ruleset/blackmatrix7/AdvertisingMiTV.yaml
+  BiliBili:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.yaml
+    path: ./ruleset/blackmatrix7/BiliBili.yaml
+  AdGuardSDNSFilter:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AdGuardSDNSFilter/AdGuardSDNSFilter_Classical.yaml
+    path: ./ruleset/blackmatrix7/AdGuardSDNSFilter.yaml
+  EasyPrivacy:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/EasyPrivacy/EasyPrivacy_Classical.yaml
+    path: ./ruleset/blackmatrix7/EasyPrivacy.yaml
+  BlockHttpDNS:
+    type: http
+    format: yaml
+    interval: 43200
+    behavior: classical
+    url: >-
+      https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BlockHttpDNS/BlockHttpDNS.yaml
+    path: ./ruleset/blackmatrix7/BlockHttpDNS.yaml
+rules:
+  - DOMAIN,yacd.metacubex.one,全局直连
+  - DOMAIN,clash.razord.top,全局直连
+  - DOMAIN,yacd.haishan.me,全局直连
+  - DOMAIN,d.metacubex.one,全局直连
+  - DOMAIN-SUFFIX,zhangyirui.cn,全局直连
+  - DOMAIN-SUFFIX,bd3qif.com,全局直连
+  - DOMAIN-SUFFIX,jingsong5683.top,全局直连
+  - DOMAIN-SUFFIX,logosc.cn,全局直连
+  - DOMAIN-SUFFIX,jetbrains.com,全局直连
+  - DOMAIN-SUFFIX,jetbrains.com.cn,全局直连
+  - DOMAIN-SUFFIX,st.com,全局直连
+  - DOMAIN-SUFFIX,juejin.cn,全局直连
+  - DOMAIN-KEYWORD,icbc,全局直连
+  - DOMAIN-KEYWORD,dcloud,全局直连
+  - IP-CIDR,38.55.232.176/32,全局直连,no-resolve
+  - IP-CIDR,8.212.125.58/32,全局直连,no-resolve
+  - IP-CIDR,8.212.2.173/32,全局直连,no-resolve
+  - DOMAIN-SUFFIX,v2rayse.com,节点选择
+  - DOMAIN-KEYWORD,bulianglin,节点选择
+  - DOMAIN-KEYWORD,omegle,节点选择
+  - RULE-SET,reject,全局拦截
+  - RULE-SET,Advertising,全局拦截
+  - RULE-SET,ZhihuAds,全局拦截
+  - RULE-SET,AdvertisingMiTV,全局拦截
+  - RULE-SET,AdGuardSDNSFilter,全局拦截
+  - RULE-SET,EasyPrivacy,全局拦截
+  - RULE-SET,BlockHttpDNS,全局拦截
+  - RULE-SET,Advertising-Direct,全局直连
+  - RULE-SET,direct,全局直连
+  - RULE-SET,lancidr,全局直连,no-resolve
+  - RULE-SET,cncidr,全局直连,no-resolve
+  - RULE-SET,applications,全局直连
+  - RULE-SET,icloud,全局直连
+  - RULE-SET,apple,全局直连
+  - RULE-SET,private,全局直连
+  - RULE-SET,BiliBili,全局直连
+  - RULE-SET,OpenAI,OpenAI
+  - RULE-SET,proxy,节点选择
+  - RULE-SET,gfw,节点选择
+  - RULE-SET,tld-not-cn,节点选择
+  - RULE-SET,telegramcidr,节点选择,no-resolve
+  - DOMAIN-SUFFIX,cn,全局直连
+  - GEOIP,CN,全局直连
+  - MATCH,节点选择
+listeners:
+  - name: mixed-in-0
+    type: mixed
+    port: 50000
+    proxy: 剩余流量：123.65 GB
+    udp: true
+  - name: mixed-in-1
+    type: mixed
+    port: 50001
+    proxy: 距离下次重置剩余：10 天
+    udp: true
+  - name: mixed-in-2
+    type: mixed
+    port: 50002
+    proxy: 套餐到期：2025-07-01
+    udp: true
+  - name: mixed-in-3
+    type: mixed
+    port: 50003
+    proxy: 🇭🇰Hong Kong 01
+    udp: true
+  - name: mixed-in-4
+    type: mixed
+    port: 50004
+    proxy: 🇭🇰Hong Kong 02
+    udp: true
+  - name: mixed-in-5
+    type: mixed
+    port: 50005
+    proxy: 🇭🇰Hong Kong 03
+    udp: true
+  - name: mixed-in-6
+    type: mixed
+    port: 50006
+    proxy: 🇭🇰Hong Kong 04
+    udp: true
+  - name: mixed-in-7
+    type: mixed
+    port: 50007
+    proxy: 🇭🇰Hong Kong 05
+    udp: true
+  - name: mixed-in-8
+    type: mixed
+    port: 50008
+    proxy: 🇭🇰Hong Kong 06
+    udp: true
+  - name: mixed-in-9
+    type: mixed
+    port: 50009
+    proxy: 🇭🇰Hong Kong IEPL 01
+    udp: true
+  - name: mixed-in-10
+    type: mixed
+    port: 50010
+    proxy: 🇭🇰Hong Kong IEPL 02
+    udp: true
+  - name: mixed-in-11
+    type: mixed
+    port: 50011
+    proxy: 🇹🇼Taiwan 01
+    udp: true
+  - name: mixed-in-12
+    type: mixed
+    port: 50012
+    proxy: 🇹🇼Taiwan 02
+    udp: true
+  - name: mixed-in-13
+    type: mixed
+    port: 50013
+    proxy: 🇹🇼Taiwan 03
+    udp: true
+  - name: mixed-in-14
+    type: mixed
+    port: 50014
+    proxy: 🇹🇼Taiwan 04
+    udp: true
+  - name: mixed-in-15
+    type: mixed
+    port: 50015
+    proxy: 🇹🇼Taiwan 05
+    udp: true
+  - name: mixed-in-16
+    type: mixed
+    port: 50016
+    proxy: 🇹🇼Taiwan 06
+    udp: true
+  - name: mixed-in-17
+    type: mixed
+    port: 50017
+    proxy: 🇹🇼Taiwan IEPL 01
+    udp: true
+  - name: mixed-in-18
+    type: mixed
+    port: 50018
+    proxy: 🇹🇼Taiwan IEPL 02
+    udp: true
+  - name: mixed-in-19
+    type: mixed
+    port: 50019
+    proxy: 🇯🇵Japan 01
+    udp: true
+  - name: mixed-in-20
+    type: mixed
+    port: 50020
+    proxy: 🇯🇵Japan 02
+    udp: true
+  - name: mixed-in-21
+    type: mixed
+    port: 50021
+    proxy: 🇯🇵Japan 03
+    udp: true
+  - name: mixed-in-22
+    type: mixed
+    port: 50022
+    proxy: 🇯🇵Japan 04
+    udp: true
+  - name: mixed-in-23
+    type: mixed
+    port: 50023
+    proxy: 🇯🇵Japan 05
+    udp: true
+  - name: mixed-in-24
+    type: mixed
+    port: 50024
+    proxy: 🇯🇵Japan 06
+    udp: true
+  - name: mixed-in-25
+    type: mixed
+    port: 50025
+    proxy: 🇯🇵Japan IEPL 01
+    udp: true
+  - name: mixed-in-26
+    type: mixed
+    port: 50026
+    proxy: 🇯🇵Japan IEPL 02
+    udp: true
+  - name: mixed-in-27
+    type: mixed
+    port: 50027
+    proxy: 🇺🇸United States 01
+    udp: true
+  - name: mixed-in-28
+    type: mixed
+    port: 50028
+    proxy: 🇺🇸United States 02
+    udp: true
+  - name: mixed-in-29
+    type: mixed
+    port: 50029
+    proxy: 🇺🇸United States 03
+    udp: true
+  - name: mixed-in-30
+    type: mixed
+    port: 50030
+    proxy: 🇺🇸United States 04
+    udp: true
+  - name: mixed-in-31
+    type: mixed
+    port: 50031
+    proxy: 🇺🇸United States 05
+    udp: true
+  - name: mixed-in-32
+    type: mixed
+    port: 50032
+    proxy: 🇺🇸United States 06
+    udp: true
+  - name: mixed-in-33
+    type: mixed
+    port: 50033
+    proxy: 🇺🇸United States IEPL 01
+    udp: true
+  - name: mixed-in-34
+    type: mixed
+    port: 50034
+    proxy: 🇺🇸United States IEPL 02
+    udp: true
+  - name: mixed-in-35
+    type: mixed
+    port: 50035
+    proxy: 🇸🇬Singapore 01
+    udp: true
+  - name: mixed-in-36
+    type: mixed
+    port: 50036
+    proxy: 🇸🇬Singapore 02
+    udp: true
+  - name: mixed-in-37
+    type: mixed
+    port: 50037
+    proxy: 🇸🇬Singapore 03
+    udp: true
+  - name: mixed-in-38
+    type: mixed
+    port: 50038
+    proxy: 🇸🇬Singapore 04
+    udp: true
+  - name: mixed-in-39
+    type: mixed
+    port: 50039
+    proxy: 🇸🇬Singapore 05
+    udp: true
+  - name: mixed-in-40
+    type: mixed
+    port: 50040
+    proxy: 🇸🇬Singapore 06
+    udp: true
+  - name: mixed-in-41
+    type: mixed
+    port: 50041
+    proxy: 🇸🇬Singapore IEPL 01
+    udp: true
+  - name: mixed-in-42
+    type: mixed
+    port: 50042
+    proxy: 🇸🇬Singapore IEPL 02
+    udp: true
+  - name: mixed-in-43
+    type: mixed
+    port: 50043
+    proxy: 🇰🇷Korea 01
+    udp: true
+  - name: mixed-in-44
+    type: mixed
+    port: 50044
+    proxy: 🇰🇷Korea 02
+    udp: true
+  - name: mixed-in-45
+    type: mixed
+    port: 50045
+    proxy: 🇰🇷Korea 03
+    udp: true
+  - name: mixed-in-46
+    type: mixed
+    port: 50046
+    proxy: 🇦🇺Australia 01
+    udp: true
+  - name: mixed-in-47
+    type: mixed
+    port: 50047
+    proxy: 🇦🇺Australia 02
+    udp: true
+  - name: mixed-in-48
+    type: mixed
+    port: 50048
+    proxy: 🇦🇺Australia 03
+    udp: true
+  - name: mixed-in-49
+    type: mixed
+    port: 50049
+    proxy: 🇬🇧United Kingdom 01
+    udp: true
+  - name: mixed-in-50
+    type: mixed
+    port: 50050
+    proxy: 🇬🇧United Kingdom 02
+    udp: true
+  - name: mixed-in-51
+    type: mixed
+    port: 50051
+    proxy: 🇬🇧United Kingdom 03
+    udp: true
+  - name: mixed-in-52
+    type: mixed
+    port: 50052
+    proxy: 🇦🇶Antarctica 01
+    udp: true
+  - name: mixed-in-53
+    type: mixed
+    port: 50053
+    proxy: 🇦🇶Antarctica 02
+    udp: true
+  - name: mixed-in-54
+    type: mixed
+    port: 50054
+    proxy: 🇦🇶Antarctica 03
+    udp: true
+  - name: mixed-in-55
+    type: mixed
+    port: 50055
+    proxy: 美国免费[ipv6]
+    udp: true
